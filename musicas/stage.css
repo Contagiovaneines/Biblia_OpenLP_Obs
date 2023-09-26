@@ -1,0 +1,119 @@
+/******************************************************************************
+* OpenLP - Projeção de Letras de Músicas de Código Aberto                     *
+* --------------------------------------------------------------------------- *
+* Direitos Autorais (c) 2008-2017 Desenvolvedores do OpenLP                   *
+* --------------------------------------------------------------------------- *
+* Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo* 
+* under the terms of the GNU General Public License as published by the Free  *
+* Software Foundation; version 2 of the License.                              *
+*                                                                             *
+* This program is distributed in the hope that it will be useful, but WITHOUT *
+* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or       *
+* FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for    *
+* more details.                                                               *
+*                                                                             *
+* You should have received a copy of the GNU General Public License along     *
+* with this program; if not, write to the Free Software Foundation, Inc., 59  *
+* Temple Place, Suite 330, Boston, MA 02111-1307 USA                          *
+******************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/* Define o background como transparente */
+body {
+   background-color: rgba(0, 0, 0, 0);
+   
+   /* Define a margem do corpo como 0 em cima e embaixo e centralizado na horizontal */
+   margin: 0px auto;
+   
+   /* Impede que haja rolagem na página */
+   overflow: hidden;
+   
+   /* Define a fonte padrão como Alfa Slab One */
+   font-family: 'Alfa Slab One', cursive;
+   
+   /* Impede que haja rolagem horizontal na página */
+   overflow: hidden;
+   }
+            
+   
+/* Estiliza o slide atual */
+
+#currentslide {
+   /* Define o elemento como flexível e centraliza seu conteúdo */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* Define a altura e largura máximas */
+   height: 400px;
+   max-width: 100%;
+   /* Define o espaçamento interno do elemento */
+   padding: 10px;
+   /* Centraliza o texto no elemento */
+   text-align: center;
+   /* Define o tamanho da fonte e adiciona sombra no texto */
+   font-size: 30pt;
+   text-shadow: 2px 4px 1px black;
+   /* Define o espaçamento entre as letras */
+   letter-spacing: 4px;
+   /* Define a altura da linha e a cor do texto */
+   line-height: 1.2;
+   color: yellow;
+   /* Remove o espaçamento inferior e define a fonte como negrito */
+   padding-bottom: 0px;
+   font-weight: bold;
+   /* Define a cor de fundo com transparência e adiciona borda arredondada */
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   /* Adiciona contorno no texto para navegadores da WebKit */
+   -webkit-text-stroke: 1.2px black;
+   -webkit-text-fill-color: yellow;
+   /* Adiciona contorno no texto */
+   text-stroke: 1.2px black;
+   text-fill-color: yellow;
+   /* Define a altura máxima e esconde conteúdo que ultrapasse o limite */
+   max-height: 80%;
+   overflow: hidden;
+   /* Remove a borda */
+   border: none;
+ }
+ 
+ 
+
+/* Estiliza o slide seguinte */
+#nextslide {
+  font-size: 40pt; /* Define o tamanho da fonte como 40pt */
+  color: yellow; /* Define a cor do texto como amarelo */
+  padding-top: 0px; /* Remove o espaçamento superior */
+  padding-bottom: 0px; /* Remove o espaçamento inferior */
+}
+
+/* Posiciona o elemento à direita */
+#right {
+  float: right; /* Define o elemento como flutuante à direita */
+}
+
+/* Estiliza o relógio */
+#clock {
+  font-size: 30pt; /* Define o tamanho da fonte como 30pt */
+  color: yellow; /* Define a cor do texto como amarelo */
+  text-align: right; /* Alinha o texto à direita */
+}
+
+/* Estiliza as notas */
+#notes {
+  font-size: 36pt; /* Define o tamanho da fonte como 36pt */
+  color: salmon; /* Define a cor do texto como salmão */
+  text-align: right; /* Alinha o texto à direita */
+}
+
+/* Estiliza a ordem dos versos */
+#verseorder {
+  font-size: 30pt; /* Define o tamanho da fonte como 30pt */
+  color: green; /* Define a cor do texto como verde */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estiliza as tags atuais */
+.currenttag {
+   color: lightgreen; /* Define a cor do texto como verde claro */
+   font-weight: bold; /* Define o peso da fonte como negrito */
+}
